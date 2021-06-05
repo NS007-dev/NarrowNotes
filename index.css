@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+body {
+    margin: 0px;
+    background-color: teal;
+}
+
+#header{
+    background-image: linear-gradient(tomato, teal);
+    color:yellow;
+    font-size: 16px;
+    padding: 16px;
+    font-family: 'Coustard', serif;
+    height: 50px;
+}
+
+#header a{
+    text-decoration: none;
+    color:yellowgreen;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#header > #name {
+    font-family: 'Coustard', serif;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.clear{
+    clear:both;
+}
+
+#container{
+    margin: 20px 20px 20px 20px;
+}
+
+#area{
+    width:100%;
+    height:100%;
+    font-family: 'Nanum Brush Script', cursive;
+    color:green;
+    font-size: 26px;
+    background-color: rgb(172, 196, 126);
+}
+
+#area:focus{
+    color:white;
+    border: 4px solid crimson;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 26px;
+    background-color:rgb(216, 174, 174);
+}
+
+#menu a #menubutton a {
+    text-decoration: none;
+    color:white;
+    font-size: 13px;
+}
+
+.footer {
+    width: 100%;
+    background-image: linear-gradient(teal, tomato);
+    height: 70px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.footer > p{
+    margin: 8px;
+    color: white;
+    text-align: center;
+    font-family: 'Coustard', serif;
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+    #menu {
+        float: right;
+        display: inline-block;
+    }
+    .menuitem {
+        display: inline;
+    }
+    .menuitem + .menuitem {
+        border-left: 1px solid white;
+        margin-left:8px;
+        padding-left: 8px;
+    }
+
+    #menubutton {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    #menubutton {
+        display: inline;
+        float: right;
+    }
+    #menu{
+        position: absolute;
+        top: 48px;
+        right: 0px;
+        background-color: turquoise;
+        padding: 16px;
+    }
+
+    .shownmenu {
+        display: block;
+    }
+    .hiddenmenu {
+        display: none;
+    }
+    .menuitem {
+        display: block;
+    }
+    .menuitem + .menuitem {
+        margin-top: 8px;
+    }
+}
+
+#controls {
+    margin-left: 10px;
+}
+
+a.button {
+    width:15%;
+    display:inline-block;
+    background-image: linear-gradient(tomato, yellow);
+    border-radius: 8px;
+    border: 1px solid yellowgreen;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 32px 16px 32px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Coustard', serif;
+}
+
+a.button:hover {
+    background-image: radial-gradient(yellow, tomato);
+    color: green;
+}
+
+a.button:active {
+    background-color: teal;
+}
