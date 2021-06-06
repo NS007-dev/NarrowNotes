@@ -62,7 +62,7 @@ body {
 .footer {
     width: 100%;
     background-image: linear-gradient(teal, tomato);
-    height: 70px;
+    height: 32px;
     position: fixed;
     bottom: 0px;
 }
