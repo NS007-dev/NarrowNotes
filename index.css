@@ -59,7 +59,7 @@ body {
     font-size: 13px;
 }
 
-.footer {
+/* .footer {
     width: 100%;
     background-image: linear-gradient(teal, tomato);
     height: 32px;
@@ -73,7 +73,7 @@ body {
     text-align: center;
     font-family: 'Coustard', serif;
     font-size: 20px;
-}
+} */
 
 @media only screen and (min-width: 600px) {
     #menu {
